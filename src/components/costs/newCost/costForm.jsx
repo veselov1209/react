@@ -55,6 +55,8 @@ function CostForm(props) {
     props.onSaveCostData(costData);
   };
 
+  const showFormHandler = () => props.onShowFormHandler();
+
   return (
     <div>
       <form onSubmit={submitHandler}>
@@ -84,7 +86,10 @@ function CostForm(props) {
             />
           </div>
           <div className="new-cost__actions">
-            <button type="submit">Добавить расход</button>
+            <button type="submit">Додати витрату</button>
+            <button type="button" onClick={props.onCancel}>
+              Скасування
+            </button>
           </div>
         </div>
       </form>

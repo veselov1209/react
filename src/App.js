@@ -30,9 +30,6 @@ function App() {
     setCosts((prevState) => {
       return [cost, ...prevState];
     });
-    console.log(costs);
-    console.log(cost);
-    console.log(cost.name);
   };
   return (
     <>
